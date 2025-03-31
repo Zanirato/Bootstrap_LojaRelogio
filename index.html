@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+ <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>ExactTime</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar-expand-lg primary-bg-color py-4 px-2" id="navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand">ExactTime</a>
+      <div id="navbar-items">
+        <div></div>
+        <form class="d-flex" id="search-form">
+          <i class="bi bi-search primary-color"></i>
+          <input type="search" class="form-control me-2" placeholder="Busque o seu relógio..." aria-label="Search">
+          <button class="btn secondary-bg-color" type="submit">Pesquisar</button>
+        </form>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-person"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-heart"></i>
+            </a>
+            <span class="qty-info">5</span>
+          </li>
+          <li class="nav-item" id="bag-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-bag"></i>
+              <b>R$ 1290,12</b>
+            </a>
+            <span class="qty-info">8</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+   </nav>
+  <nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar-container">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar"></ul>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+         Produtos
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          Promoções
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          Blog
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          Contato
+        </a>
+      </li>
+    </div>
+  </nav>
+<!-- FIM NAVBAR -->
+
+<!-- BANNERS -->
+  <div class="container" id="banners-container">
+    <div id="slider" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item-active">
+          <img src="img/banner1.jpg" class="d-block w-100 img-fluid" alt="...">
+          <div class="carousel-caption primary-bg-color">
+            <h5>Relógios de luxo</h5>
+            <p>Para você estar pronto em qualquer situação.</p>
+          </div>
+        </div>
+        <div class="carousel-item-active">
+          <img src="img/banner3.jpg" class="d-block w-100 img-fluid" alt="...">
+          <div class="carousel-caption primary-bg-color">
+            <h5>Linha importada</h5>
+            <p>Conheça os melhores relógios suiços, com pronta entrega.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- MINI BANNERS -->
+    <div class="container" id="mini-banners">
+      <div class="row justify-content-around">
+        <div class="col-12 dark-bg-color" id="mini-banner-1">
+          <h2>Nova coleção</h2>
+          <img src="img/relogio1.png" alt="Relógio 1">
+          <a href="#">Compre Agora</a>
+        </div>
+        <div class="col-12 secondary-bg-color" id="mini-banner-2">
+          <h2>Promoções</h2>
+          <img src="img/relogio2.png" alt="Relógio 2">
+          <a href="#">Compre Agora</a>
+        </div>
+        <div class="col-12 light-bg-color" id="mini-banner-3">
+          <h2 class="secondary-color">Edição Limitada</h2>
+          <a href="#">Compre Agora</a>
+          <img src="img/relogio3.png" alt="Relógio 3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BEST SELLERS -->
+  <div class="container" id="best-sellers">
+    <h2 class="title primary-color">Best Sellers</h2>
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <div class="card primary-bg-color">
+          <img src="img/relogio1.png" class="card-img-top img-fluid" alt="Relógio">
+          <div class="card-body">
+            <p class="card-category secondary-color">Relógio</p>
+            <h5 class="card-title">Nome do Produto</h5>
+            <p class="card-text primary-color">R$177.63</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card primary-bg-color">
+          <img src="img/relogio4.png" class="card-img-top img-fluid" alt="Relógio">
+          <div class="card-body">
+            <p class="card-category secondary-color">Relógio</p>
+            <h5 class="card-title">Nome do Produto</h5>
+            <p class="card-text primary-color">R$177.63</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card primary-bg-color">
+          <img src="img/relogio5.png" class="card-img-top img-fluid" alt="Relógio">
+          <div class="card-body">
+            <p class="card-category secondary-color">Relógio</p>
+            <h5 class="card-title">Nome do Produto</h5>
+            <p class="card-text primary-color">R$177.63</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card primary-bg-color">
+          <img src="img/relogio6.png" class="card-img-top img-fluid" alt="Relógio">
+          <div class="card-body">
+            <p class="card-category secondary-color">Relógio</p>
+            <h5 class="card-title">Nome do Produto</h5>
+            <p class="card-text primary-color">R$177.63</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Depois avance para os próximos passos -->
+
+  <!-- Tenha paciência! Entenda como funciona cada passo -->
+
+  <!-- Que tal deixar no visual mais personalizado?! -->
+
+  <!-- Abuse da criatividade! -->
+  
+</body>
+</html>
